@@ -1,27 +1,14 @@
-console.log(
-"Athena Command Center Online"
-);
-
-
-const buttons =
-document.querySelectorAll("button");
-
+const buttons = document.querySelectorAll("button");
 
 buttons.forEach(button=>{
 
+    button.addEventListener("click",()=>{
 
-button.addEventListener(
-"click",
-()=>{
+        const module =
+        button.innerText;
 
-console.log(
-button.innerText +
-" module selected"
-);
+        openModule(module);
 
-}
-
-);
-
+    });
 
 });
